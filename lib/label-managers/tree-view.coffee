@@ -1,6 +1,4 @@
 UILabelManager = require '../ui-label-manager'
-{debounce} = require 'lodash'
-{Disposable} = require 'atom'
 
 class TreeViewManager extends UILabelManager
     getElements: ->

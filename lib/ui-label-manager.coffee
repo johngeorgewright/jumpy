@@ -57,9 +57,9 @@ class UILabelManager extends LabelManager
         ['blur', 'click']
 
     initializeClearEvents: (clear) ->
-        for containers in @getContainingElements()
+        for container in @getContainingElements()
             for e in @getClearEvents()
-                do (treeView, e) =>
+                do (container, e) =>
                     container.addEventListener e, clear
                     @disposables.add new Disposable ->
                         container.removeEventListener e, clear
