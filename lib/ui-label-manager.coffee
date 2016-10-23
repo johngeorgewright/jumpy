@@ -1,5 +1,6 @@
 LabelManager = require './label-manager'
 {triggerMouseEvent} = require './events'
+{Disposable} = require 'atom'
 
 class UILabelManager extends LabelManager
     constructor: ->
